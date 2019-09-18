@@ -1,17 +1,19 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <section>
+    <booking-form />
+    <bookings-grid />
+  </section>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BookingForm from '@/components/BookingForm';
+import BookingsGrid from '@/components/BookingsGrid';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    'booking-form': BookingForm,
+    'bookings-grid': BookingsGrid
   }
 }
 </script>
