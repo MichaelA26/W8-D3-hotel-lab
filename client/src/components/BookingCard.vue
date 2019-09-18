@@ -3,7 +3,15 @@
     <h3>{{ booking.name }}</h3>
     <p>Guest E-mail: {{ booking.email }}</p>
     <p>Checked In/Out: {{ booking.checkedIn }}</p>
-    <button type="button" class="delete-btn" v-on:click="deleteBooking"></button>
+    <button type="button" class="delete-btn" v-on:click="deleteBooking">Delete</button>
+    <label class="container">Yes
+      <input type="checkbox" checked="checked">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">No
+      <input type="checkbox" checked="checked">
+      <span class="checkmark"></span>
+    </label>
   </div>
 </template>
 
